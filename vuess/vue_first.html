@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue指令 | Vlin博客</title>
+    <meta name="description" content="Where Dreams Begin">
+    <link rel="icon" href="./public/loggo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.2118a9ef.css" as="style"><link rel="preload" href="/assets/js/app.e008fc28.js" as="script"><link rel="preload" href="/assets/js/10.4b4bf23f.js" as="script"><link rel="prefetch" href="/assets/js/11.fe32600f.js"><link rel="prefetch" href="/assets/js/12.725a0064.js"><link rel="prefetch" href="/assets/js/2.3de682db.js"><link rel="prefetch" href="/assets/js/3.302b7e83.js"><link rel="prefetch" href="/assets/js/4.e547cb9d.js"><link rel="prefetch" href="/assets/js/5.5a9bc9a7.js"><link rel="prefetch" href="/assets/js/6.a9157e9f.js"><link rel="prefetch" href="/assets/js/7.0c7a8997.js"><link rel="prefetch" href="/assets/js/8.d19f3fdf.js"><link rel="prefetch" href="/assets/js/9.65db3ec1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2118a9ef.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vlin博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Javascript系列</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js_first.html" class="nav-link">调用堆栈</a></li><li class="dropdown-item"><!----> <a href="/js_second.html" class="nav-link">原始类型</a></li><li class="dropdown-item"><!----> <a href="/js_third.html" class="nav-link">值类型vs引用</a></li><li class="dropdown-item"><!----> <a href="/js_forth.html" class="nav-link">隐式、显式、名义与鸭子类型</a></li><li class="dropdown-item"><!----> <a href="/js_fifth.html" class="nav-link">typeof与instanceof</a></li><li class="dropdown-item"><!----> <a href="/js_sixth.html" class="nav-link">this,call,apply,bind</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Vue系列</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuess/vue_first.html" class="nav-link router-link-exact-active router-link-active">Vue指令</a></li><li class="dropdown-item"><!----> <a href="/vuess/vue_second.html" class="nav-link">Vue自定义指令</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">小程序系列</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue_first/" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/vue_second/" class="nav-link">Japanese</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Javascript系列</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js_first.html" class="nav-link">调用堆栈</a></li><li class="dropdown-item"><!----> <a href="/js_second.html" class="nav-link">原始类型</a></li><li class="dropdown-item"><!----> <a href="/js_third.html" class="nav-link">值类型vs引用</a></li><li class="dropdown-item"><!----> <a href="/js_forth.html" class="nav-link">隐式、显式、名义与鸭子类型</a></li><li class="dropdown-item"><!----> <a href="/js_fifth.html" class="nav-link">typeof与instanceof</a></li><li class="dropdown-item"><!----> <a href="/js_sixth.html" class="nav-link">this,call,apply,bind</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Vue系列</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuess/vue_first.html" class="nav-link router-link-exact-active router-link-active">Vue指令</a></li><li class="dropdown-item"><!----> <a href="/vuess/vue_second.html" class="nav-link">Vue自定义指令</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">小程序系列</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue_first/" class="nav-link">Chinese</a></li><li class="dropdown-item"><!----> <a href="/vue_second/" class="nav-link">Japanese</a></li></ul></div></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="vue指令"><a href="#vue指令" aria-hidden="true" class="header-anchor">#</a> Vue指令</h1> <h2 id="v-text"><a href="#v-text" aria-hidden="true" class="header-anchor">#</a> v-text</h2> <hr> <div class="language- extra-class"><pre class="language-text"><code>
+&lt;div v-text=&quot;name&quot;&gt;&lt;/div&gt;
+</code></pre></div><p>v-text=&quot;name&quot;与<code>&lt;div&gt;&lt;/div&gt;</code>效果一样，但是优于<code>&lt;div&gt;&lt;/div&gt;</code>
+如果数据是异步加载过来的时候，<code>&lt;div&gt;&lt;/div&gt;</code>会显示
+v-text不会
+一般数据加载都很快，所以用的<code>&lt;div&gt;&lt;/div&gt;</code>比较多</p> <h2 id="v-html"><a href="#v-html" aria-hidden="true" class="header-anchor">#</a> v-html</h2> <hr> <p>双大括号的方式会将数据解释为纯文本，而非HTML。为了输出真正的HTML，可以用v-html指令。它等同于JS的innerHtml属性。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+&lt;div v-html=&quot;chenData&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+ let app = new Vue({
+    el: '#app',
+      data: {
+          chenData: '&lt;p&gt;这个div的内容将会替换成属性值chenData，直接作为HTML进行渲染。&lt;/p&gt;'
+      }
+  });
+
+ &lt;/script&gt;
+
+</code></pre></div><h2 id="v-if"><a href="#v-if" aria-hidden="true" class="header-anchor">#</a> v-if</h2> <hr> <p>v-if可以实现条件渲染，Vue会根据表达式的值的真假条件来渲染元素。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a v-if=&quot;ok&quot;&gt;yes&lt;/a&gt;
+</code></pre></div><p>如果属性值ok为true，则显示。否则，不会渲染这个元素。</p> <h2 id="v-else"><a href="#v-else" aria-hidden="true" class="header-anchor">#</a> v-else</h2> <hr> <p>v-else是搭配v-if使用的，它必须紧跟在v-if或者v-else-if后面，否则不起作用。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a v-if=&quot;ok&quot;&gt;yes&lt;/a&gt;
+&lt;a v-else&gt;No&lt;/a&gt;
+</code></pre></div><h2 id="v-else-if"><a href="#v-else-if" aria-hidden="true" class="header-anchor">#</a> v-else-if</h2> <hr> <p>v-else-if充当v-if的else-if块，可以链式的使用多次。可以更加方便的实现switch语句。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div v-if=&quot;type === 'A'&quot;&gt;
+  A
+&lt;/div&gt;
+&lt;div v-else-if=&quot;type === 'B'&quot;&gt;
+  B
+&lt;/div&gt;
+&lt;div v-else-if=&quot;type === 'C'&quot;&gt;
+  C
+&lt;/div&gt;
+&lt;div v-else&gt;
+  Not A/B/C
+&lt;/div&gt;
+</code></pre></div><h2 id="v-show"><a href="#v-show" aria-hidden="true" class="header-anchor">#</a> v-show</h2> <hr> <p>多次使用用v-show，一次使用用v-if</p> <div class="language- extra-class"><pre class="language-text"><code>h1 v-show=&quot;ok&quot;&gt;hello world&lt;/h1&gt;
+</code></pre></div><p>v-show=“true”     	// 相当于display：block
+v-show=“false&quot;  	// 相当于display：none
+显示与不显示，但是内容是一直都在的</p> <p>v-if=”true“        显示
+v-if=&quot;false&quot;       不显示，相当于被注释掉了
+动态创建与删除，虚拟DOM里面的注释与不注释
+v-if=&quot;&quot;   后面只能跟表达式，不能跟语句</p> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>注意：v-if有更高的切换开销
+v-show有更高的初始渲染开销。
+因此，如果要非常频繁的切换，则使用v-show较好；如果在运行时条件不太可能改变，则v-if较好</p></div> <h2 id="v-for"><a href="#v-for" aria-hidden="true" class="header-anchor">#</a> v-for</h2> <hr> <p>v-for循环外面必须套一个大盒子
+用v-for指令根据遍历数组来进行渲染
+有下面两种遍历形式</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;li v-for=&quot;(value，key,index) in data里的对象名&quot;&gt;&lt;/li&gt;   //使用in，index是一个可选参数，表示当前项的索引
+&lt;li v-for=&quot;(item,index) of data里的数组名&quot;&gt;&lt;/li&gt;   //使用of
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;li v-for=&quot;(item,index) in chenArrs&quot;&gt;
+        {{chenArrs.item}}{{chenObj.name}}
+    &lt;/li&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    let app = new Vue({
+      el:'#app',
+      data:{
+        chenArrs:[1,2,3,4,5],
+        chenObj:{
+            name:&quot;chen&quot;,
+            age:&quot;12&quot;,
+            hope:&quot;read_book&quot;
+        }
+      }
+    })
+&lt;/script&gt;
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>注意：当v-for和v-if同处于一个节点时，v-for的优先级比v-if更高。这意味着v-if将运行在每个v-for循环中
+当v-for列表循环时，加绑定一key值  :key=&quot;item.id&quot; ，key=&quot;唯一标识&quot; 唯一标识可以是item里面id index等，因为vue组件高度复用增加Key可以标识组件的唯一性，为了更好地区别各个组件 key的作用主要是为了高效的更新虚拟DOM</p></div> <h2 id="v-on-事件绑定"><a href="#v-on-事件绑定" aria-hidden="true" class="header-anchor">#</a> v-on(事件绑定)</h2> <hr> <p>绑定事件指令
+简写： @
+事件方法 = methods里面定义好的事件名称</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;button @click//点击事件 = &quot;handleClick&quot; &gt;
+&lt;script&gt;
+let app = new Vue({
+   el: '#app',
+     methods:{   //这个选项放置的都是 方法
+         handleClick() {
+             console.log('welcome')
+         }
+     },
+     data: {
+         name: 'vlin'
+     }
+ });
+
+&lt;/script&gt;
+</code></pre></div><h3 id="事件修饰符"><a href="#事件修饰符" aria-hidden="true" class="header-anchor">#</a> 事件修饰符</h3> <ul><li><p>.stop  阻止事件继续传播</p></li> <li><p>.prevent 事件不再重载页面</p></li> <li><p>.capture 使用事件捕获模式,即元素自身触发的事件先在此处处理，然后才交由内部元素进行处理</p></li> <li><p>.self 只当在 event.target 是当前元素自身时触发处理函数</p></li> <li><p>.once 事件将只会触发一次</p></li> <li><p>.passive 告诉浏览器你不想阻止事件的默认行为</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 阻止单击事件继续传播 --&gt;
+&lt;a v-on:click.stop=&quot;doThis&quot;&gt;&lt;/a&gt;
+
+&lt;!-- 提交事件不再重载页面 --&gt;
+&lt;form v-on:submit.prevent=&quot;onSubmit&quot;&gt;&lt;/form&gt;
+
+&lt;!-- 修饰符可以串联 --&gt;
+&lt;a v-on:click.stop.prevent=&quot;doThat&quot;&gt;&lt;/a&gt;
+
+&lt;!-- 只有修饰符 --&gt;
+&lt;form v-on:submit.prevent&gt;&lt;/form&gt;
+
+&lt;!-- 添加事件监听器时使用事件捕获模式 --&gt;
+&lt;!-- 即元素自身触发的事件先在此处处理，然后才交由内部元素进行处理 --&gt;
+&lt;div v-on:click.capture=&quot;doThis&quot;&gt;...&lt;/div&gt;
+
+&lt;!-- 只当在 event.target 是当前元素自身时触发处理函数 --&gt;
+&lt;!-- 即事件不是从内部元素触发的 --&gt;
+&lt;div v-on:click.self=&quot;doThat&quot;&gt;...&lt;/div&gt;
+
+&lt;!-- 点击事件将只会触发一次 --&gt;
+&lt;a v-on:click.once=&quot;doThis&quot;&gt;&lt;/a&gt;
+
+&lt;!-- 滚动事件的默认行为 (即滚动行为) 将会立即触发 --&gt;
+&lt;!-- 而不会等待 `onScroll` 完成  --&gt;
+&lt;!-- 这其中包含 `event.preventDefault()` 的情况 --&gt;
+&lt;div v-on:scroll.passive=&quot;onScroll&quot;&gt;...&lt;/div&gt;
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。因此，用v-on:click.prevent.self会阻止所有的点击，而 v-on:click.self.prevent 只会阻止对元素自身的点击。</p></div> <h3 id="按键修饰符"><a href="#按键修饰符" aria-hidden="true" class="header-anchor">#</a> 按键修饰符</h3> <p>Vue 允许为 v-on 在监听键盘事件时添加按键修饰符：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 只有在 keyCode 是 13 时（也就是回车键）调用 vm.submit() --&gt;
+&lt;input v-on:keyup.13=&quot;submit&quot;&gt;
+
+记住所有的 keyCode 比较困难，所以 Vue 为最常用的按键提供了别名：
+&lt;!-- 只有在 keyCode 是回车键时调用 vm.submit() --&gt;
+&lt;input v-on:keyup.enter=&quot;submit&quot;&gt;
+</code></pre></div><p>全部的按键别名：</p> <div class="language- extra-class"><pre class="language-text"><code>.enter
+.tab
+.delete (捕获 &quot;删除&quot; 和 &quot;退格&quot; 键)
+.esc
+.space
+.up
+.down
+.left
+.right
+.ctrl
+.alt
+.shift
+.meta
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;p&gt;&lt;!-- Alt + C --&gt;
+&lt;input @keyup.alt.67=&quot;clear&quot;&gt;
+&lt;!-- Ctrl + Click --&gt;
+&lt;div @click.ctrl=&quot;doSomething&quot;&gt;Do something&lt;/div&gt;
+</code></pre></div><h2 id="v-bind（属性绑定）"><a href="#v-bind（属性绑定）" aria-hidden="true" class="header-anchor">#</a> v-bind（属性绑定）</h2> <hr> <p>v-bind用来动态的绑定一个或者多个特性。没有参数时，可以绑定到一个包含键值对的对象。常用于动态绑定class和style。以及href等。
+简写为一个冒号【  ：】</p> <h2 id="对象语法："><a href="#对象语法：" aria-hidden="true" class="header-anchor">#</a> 对象语法：</h2> <div class="language- extra-class"><pre class="language-text"><code>//进行类切换的例子
+&lt;div id=&quot;app&quot;&gt;
+    &lt;!--当data里面定义的isActive等于true时，is-active这个类才会被添加起作用--&gt;
+    &lt;!--当data里面定义的hasError等于true时，text-danger这个类才会被添加起作用--&gt;
+    &lt;div :class=&quot;{'is-active':isActive, 'text-danger':hasError}&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    var app = new Vue({
+        el: '#app',
+        data: {
+            isActive: true,  
+            hasError: false
+        }
+    })
+&lt;/script&gt;
+</code></pre></div><p>渲染结果：
+</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class = &quot;is-active&quot;&gt;&lt;/div&gt;
+</code></pre></div><h2 id="数组语法"><a href="#数组语法" aria-hidden="true" class="header-anchor">#</a> 数组语法</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;!--数组语法：errorClass在data对应的类一定会添加--&gt;
+    &lt;!--is-active是对象语法，根据activeClass对应的取值决定是否添加--&gt;
+    &lt;p :class=&quot;[{'is-active':activeClass},errorClass]&quot;&gt;12345&lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    var app = new Vue({
+        el: '#app',
+        data: {
+            activeClass: false,
+            errorClass: 'text-danger'
+        }
+    })
+&lt;/script&gt;
+</code></pre></div><p>渲染结果：
+</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;p class = &quot;text-danger&quot;&gt;&lt;/p&gt;
+</code></pre></div><h2 id="直接绑定数据对象"><a href="#直接绑定数据对象" aria-hidden="true" class="header-anchor">#</a> 直接绑定数据对象</h2> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;!--在vue实例的data中定义了classObject对象，这个对象里面是所有类名及其真值--&gt;
+    &lt;!--当里面的类的值是true时会被渲染--&gt;
+    &lt;div :class=&quot;classObject&quot;&gt;12345&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    var app = new Vue({
+        el: '#app',
+        data: {
+            classObject:{
+                'is-active': false,
+                'text-danger':true
+            }           
+        }
+    })
+&lt;/script&gt;
+</code></pre></div><p>渲染结果：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class = &quot;text-danger&quot;&gt;&lt;/div&gt;
+</code></pre></div><p>还有,src属性绑定</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;img v-bind:src=&quot;imgUrl&quot;/&gt;
+
+data:{
+    imgUrl : &quot;./asset/good.png&quot;
+}
+
+</code></pre></div><h2 id="v-model（表单事件绑定）"><a href="#v-model（表单事件绑定）" aria-hidden="true" class="header-anchor">#</a> v-model（表单事件绑定）</h2> <hr> <p>双向绑定：绑定的是input的value值和Vue中的data中的数据。</p> <div class="language- extra-class"><pre class="language-text"><code>v-model会忽略所有表单元素的value、checked、selected特性的初始值。因为它选择Vue实例数据做为具体的值。
+&lt;div id=&quot;app&quot;&gt;
+    &lt;input v-model=&quot;somebody&quot;&gt;
+    &lt;p&gt;hello {{somebody}}&lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    var app = new Vue({
+        el: '#app',
+        data: {
+            somebody:'小明'
+        }
+    })
+&lt;/script&gt;
+</code></pre></div><p>这个例子中直接在浏览器input中输入别的名字，下面的p的内容会直接跟着变。这就是双向数据绑定。</p> <h3 id="v-model的修饰符"><a href="#v-model的修饰符" aria-hidden="true" class="header-anchor">#</a> v-model的修饰符</h3> <ul><li>v-model.lazy 只有在input输入框发生一个blur时才触发</li> <li>v-model.trim 将用户输入的前后的空格去掉</li> <li>v-model.number 将用户输入的字符串转换成number</li></ul> <h3 id="checkbox-多选框"><a href="#checkbox-多选框" aria-hidden="true" class="header-anchor">#</a> checkbox   多选框</h3> <p>v-model    input checkbox的被选中的value值和数据进行绑定
+可以把用户选中的值记录下来，给后台发过去</p> <h3 id="select-下拉框"><a href="#select-下拉框" aria-hidden="true" class="header-anchor">#</a> select  下拉框</h3> <p>被选中的选项的value值与数据进项绑定，虽然数据只有一条，但是统一规范，全部写成数组格式</p> <h3 id="radio-单选框"><a href="#radio-单选框" aria-hidden="true" class="header-anchor">#</a> radio  单选框</h3> <p>绑定选中的选项的value值与数据</p> <h2 id="v-pre"><a href="#v-pre" aria-hidden="true" class="header-anchor">#</a> v-pre</h2> <hr> <p>跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache {{}} 标签。跳过大量没有指令的节点会加快编译。</p> <p>示例：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;span v-pre&gt;{{ 这里的内容不会被编译 }}&lt;/span&gt;
+</code></pre></div><h2 id="v-cloak"><a href="#v-cloak" aria-hidden="true" class="header-anchor">#</a> v-cloak</h2> <hr> <p>这个指令是用来保持在元素上直到关联实例结束时进行编译。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;app&quot; v-cloak&gt;
+    &lt;div&gt;
+        {{message}}
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    new Vue({
+      el:'#app',
+      data:{
+        message:'hello world'
+      }
+    })
+&lt;/script&gt;
+</code></pre></div><p>在页面加载时会闪烁，先显示:</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div&gt;
+    {{message}}
+&lt;/div&gt;
+</code></pre></div><p>然后才会编译为：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div&gt;
+    hello world!
+&lt;/div&gt;
+</code></pre></div><h2 id="v-once"><a href="#v-once" aria-hidden="true" class="header-anchor">#</a> v-once</h2> <hr> <p>v-once关联的实例，只会渲染一次。之后的重新渲染，实例极其所有的子节点将被视为静态内容跳过，这可以用于优化更新性能。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;span v-once&gt;This will never change:{{msg}}&lt;/span&gt;  //单个元素
+&lt;div v-once&gt;//有子元素
+    &lt;h1&gt;comment&lt;/h1&gt;
+    &lt;p&gt;{{msg}}&lt;/p&gt;
+&lt;/div&gt;
+&lt;my-component v-once:comment=&quot;msg&quot;&gt;&lt;/my-component&gt;  //组件
+&lt;ul&gt;
+    &lt;li v-for=&quot;i in list&quot;&gt;{{i}}&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></div><p>上面的例子中，msg,list即使产生改变，也不会重新渲染。</p></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.e008fc28.js" defer></script><script src="/assets/js/10.4b4bf23f.js" defer></script>
+  </body>
+</html>
